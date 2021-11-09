@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callback Hell Countdown</title>
+  <script src="script.js"></script>
+  <style>
+    .container {
+      height: 25rem;
+      width: 30rem;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem auto;
+      background-color: oldlace;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .restart-btn {
+      width: 7rem;
+      height: 3rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-style: none;
+      color: #fff;
+      background-color: orange;
+      border-radius: 0.5rem;
+    }
+
+    .restart-btn:hover {
+      cursor: pointer;
+      background-color: tomato;
+    }
+
+    .msg {
+      font-size: 1.5rem;
+      font-weight: 1000;
+      text-shadow: 3px 3px 14px rgba(255, 209, 144, 1);
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Countdown</h1>
+    <p id="timer"></p>
+    <button class="restart-btn" onclick="restartCounter()">Restart</button>
+  </div>
+</body>
+</html>
